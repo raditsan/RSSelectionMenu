@@ -436,9 +436,10 @@ extension RSSelectionMenu {
         
         // add done action
         if (tableView?.selectionStyle == .multiple || !self.dismissAutomatically || style == .actionSheet)  {
-            if case .actionSheet = menuPresentationStyle {
-                alertController.addAction(doneAction)
-            }
+//             if case .actionSheet = menuPresentationStyle {
+//                 alertController.addAction(doneAction)
+//             }
+            alertController.addAction(doneAction)
         }
         
         let viewHeight = height ?? 350
